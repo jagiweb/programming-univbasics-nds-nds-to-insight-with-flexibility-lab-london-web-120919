@@ -35,13 +35,13 @@ end
 
 def movies_with_director_key(name, movies_collection)
   pp movies_collection
-  # i = 0
-  # while i < movies_collection.length do
-  #   new_array.push(movies_collection[i])
-  #   movie_with_director_name[:director_name] = name
-  #   i += 1
-  # end
-  # puts new_array
+  i = 0
+  while i < movies_collection.length do
+    # new_array.push(movies_collection[i])
+    movie_with_director_name(name, movies_collection[i])
+    i += 1
+  end
+  puts new_array
 
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method
