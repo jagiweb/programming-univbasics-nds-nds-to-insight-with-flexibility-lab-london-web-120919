@@ -30,15 +30,11 @@ def movie_with_director_name(director_name, movie_data)
   }
 end
 
-def sumar2(a, b)
-  return (a + b)/10
-end
-
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
   movies = []
-  i = 0
+  i = 0+
   while i < movies_collection.length do
     # new_array.push(movies_collection[i])
     movies << movie_with_director_name(name, movies_collection[i])
