@@ -37,7 +37,7 @@ def movies_with_director_key(name, movies_collection)
   new_array = []
   i = 0
   while i < movies_collection.length do
-    new_array.push(def movie_with_director_name(director_name, movie_data))
+    new_array.push(movie_with_director_name(director_name, movie_data))
     new_array[i][:director_name] = name
     i += 1
   end
