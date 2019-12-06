@@ -36,7 +36,6 @@ def movies_with_director_key(name, movies_collection)
   movies = []
   i = 0
   while i < movies_collection.length do
-    # new_array.push(movies_collection[i])
     movies << movie_with_director_name(name, movies_collection[i])
     i += 1
   end
@@ -74,11 +73,12 @@ def gross_per_studio(collection)
 end
 
 def movies_with_directors_set(source)
+  pp source[0]
+  pp source[1]
   directors_movies = []
   i = 0
   while i < source.length do
-    movies_with_directors_key(source[i][:name], source[i][:movies] )
-
+    directors_movies << movies_with_directors_key(source[i][:name], source[i][:movies])
     i += 1
   end
   # GOAL: For each director, find their :movies Array and stick it in a new Array
