@@ -62,6 +62,10 @@ def gross_per_studio(collection)
   pp collection[1]
   pp collection[2]
 
+{
+  :"Alpha Films" => 40
+  :"Omega films" => 30
+}
 
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
