@@ -40,7 +40,7 @@ def movies_with_director_key(name, movies_collection)
     new_array.push(movies_collection[i][:director_name] = name)
     i += 1
   end
-  new_array
+  puts new_array
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method
   # and accumulate the returned Array of movies into a new Array that's
